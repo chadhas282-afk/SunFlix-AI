@@ -18,3 +18,8 @@ st.markdown("""
     /* Hide default streamlit headers and footers */
     #MainMenu {visibility: hidden;}
     header {visibility: hidden;}
+    footer {visibility: hidden;}
+    
+    /* Main Background Override */
+    [data-testid="stAppViewContainer"], [data-testid="stApp"] {
+        background: linear-gradient(135deg, #0b0f19 0%, #1a1f35 100%) !important;
