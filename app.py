@@ -68,3 +68,8 @@ st.markdown("""
         transition: all 0.3s ease !important;
         box-shadow: 0 4px 15px rgba(255, 75, 75, 0.3) !important;
     }
+    button[kind="primary"]:hover {
+        transform: translateY(-2px) !important;
+        box-shadow: 0 6px 20px rgba(255, 75, 75, 0.5) !important;
+        border: none !important;
+    }
