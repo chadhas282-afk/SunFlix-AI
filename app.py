@@ -83,3 +83,8 @@ st.markdown("""
         padding: 10px 24px !important;
         font-weight: 600 !important;
         transition: all 0.3s ease !important;
+        }
+    button[kind="secondary"]:hover {
+        background: rgba(255, 255, 255, 0.15) !important;
+        border-color: #cbd5e1 !important;
+        color: #fff !important;
