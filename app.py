@@ -38,3 +38,8 @@ st.markdown("""
         transition: all 0.3s ease;
     }
     div[data-baseweb="textarea"] > div {
+    background: transparent !important;
+    }
+    div[data-baseweb="textarea"] textarea {
+        color: #fff !important;
+        font-size: 1.1rem !important;
