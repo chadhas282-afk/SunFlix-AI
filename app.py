@@ -88,3 +88,8 @@ st.markdown("""
         background: rgba(255, 255, 255, 0.15) !important;
         border-color: #cbd5e1 !important;
         color: #fff !important;
+        }
+
+    /* Multiselect and Select Slider Tweaks */
+    div[data-baseweb="select"] {
+        background: rgba(255, 255, 255, 0.05) !important;
