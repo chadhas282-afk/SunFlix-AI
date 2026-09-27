@@ -23,3 +23,8 @@ st.markdown("""
     /* Main Background Override */
     [data-testid="stAppViewContainer"], [data-testid="stApp"] {
         background: linear-gradient(135deg, #0b0f19 0%, #1a1f35 100%) !important;
+        color: #f8fafc;
+        font-family: 'Inter', sans-serif;
+    }
+    [data-testid="stHeader"] {
+        background: rgba(0,0,0,0) !important;
