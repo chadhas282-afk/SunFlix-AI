@@ -78,3 +78,8 @@ st.markdown("""
     button[kind="secondary"] {
         background: rgba(255, 255, 255, 0.05) !important;
         color: #e2e8f0 !important;
+        border: 1px solid rgba(255, 255, 255, 0.1) !important;
+        border-radius: 10px !important;
+        padding: 10px 24px !important;
+        font-weight: 600 !important;
+        transition: all 0.3s ease !important;
