@@ -53,3 +53,8 @@ st.markdown("""
     /* Text Area Label */
     .stTextArea label, label[data-testid="stWidgetLabel"] {
         font-size: 1.1rem !important;
+        font-weight: 600 !important;
+        color: #e2e8f0 !important;
+    }
+
+    /* Primary Generate Button */
