@@ -43,3 +43,8 @@ st.markdown("""
     div[data-baseweb="textarea"] textarea {
         color: #fff !important;
         font-size: 1.1rem !important;
+        padding: 15px !important;
+    }
+    div[data-baseweb="textarea"]:focus-within {
+        border-color: #ff4b4b !important;
+        box-shadow: 0 0 15px rgba(255, 75, 75, 0.4) !important;
