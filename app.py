@@ -12,3 +12,9 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded"
 )
+
+st.markdown("""
+<style>
+    /* Hide default streamlit headers and footers */
+    #MainMenu {visibility: hidden;}
+    header {visibility: hidden;}
