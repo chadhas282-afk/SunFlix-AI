@@ -63,3 +63,8 @@ st.markdown("""
         color: white !important;
         border: none !important;
         border-radius: 10px !important;
+        padding: 10px 24px !important;
+        font-weight: 700 !important;
+        transition: all 0.3s ease !important;
+        box-shadow: 0 4px 15px rgba(255, 75, 75, 0.3) !important;
+    }
