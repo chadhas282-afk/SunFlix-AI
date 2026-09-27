@@ -28,3 +28,8 @@ st.markdown("""
     }
     [data-testid="stHeader"] {
         background: rgba(0,0,0,0) !important;
+        }
+
+    /* Style the Text Area Container and Input */
+    div[data-baseweb="textarea"] {
+        background: rgba(255, 255, 255, 0.05) !important;
