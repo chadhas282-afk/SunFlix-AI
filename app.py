@@ -8,3 +8,7 @@ import streamlit.components.v1 as components
 
 st.set_page_config(
     page_title="SunFlix AI ☀️",
+    page_icon="☀️",
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
