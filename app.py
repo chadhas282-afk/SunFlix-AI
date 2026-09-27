@@ -33,3 +33,8 @@ st.markdown("""
     /* Style the Text Area Container and Input */
     div[data-baseweb="textarea"] {
         background: rgba(255, 255, 255, 0.05) !important;
+         border: 1px solid rgba(255, 255, 255, 0.1) !important;
+        border-radius: 12px !important;
+        transition: all 0.3s ease;
+    }
+    div[data-baseweb="textarea"] > div {
