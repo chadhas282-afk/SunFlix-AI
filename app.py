@@ -48,3 +48,8 @@ st.markdown("""
     div[data-baseweb="textarea"]:focus-within {
         border-color: #ff4b4b !important;
         box-shadow: 0 0 15px rgba(255, 75, 75, 0.4) !important;
+        }
+    
+    /* Text Area Label */
+    .stTextArea label, label[data-testid="stWidgetLabel"] {
+        font-size: 1.1rem !important;
