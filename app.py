@@ -73,3 +73,8 @@ st.markdown("""
         box-shadow: 0 6px 20px rgba(255, 75, 75, 0.5) !important;
         border: none !important;
     }
+
+    /* Secondary Buttons */
+    button[kind="secondary"] {
+        background: rgba(255, 255, 255, 0.05) !important;
+        color: #e2e8f0 !important;
