@@ -58,3 +58,8 @@ st.markdown("""
     }
 
     /* Primary Generate Button */
+     button[kind="primary"] {
+        background: linear-gradient(45deg, #ff4b4b, #ff8f00) !important;
+        color: white !important;
+        border: none !important;
+        border-radius: 10px !important;
