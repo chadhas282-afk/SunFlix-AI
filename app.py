@@ -168,3 +168,8 @@ def get_recommendations(user_query: str, intensity: str, preferred_languages: li
         if intensity == "Low":
             score *= random.uniform(0.8, 1.0)
         elif intensity == "Intense":
+            score *= 1.2
+            
+        scored_movies.append({
+            "movie": movie,
+            "score": score
