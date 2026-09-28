@@ -98,3 +98,9 @@ st.markdown("""
         color: white !important;
     }
     div[data-baseweb="select"] > div {
+    div[data-baseweb="select"] > div {
+        background: transparent !important;
+    }
+    
+    /* Sidebar Styling */
+    [data-testid="stSidebar"] {
