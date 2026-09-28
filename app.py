@@ -104,3 +104,8 @@ st.markdown("""
     
     /* Sidebar Styling */
     [data-testid="stSidebar"] {
+    background: rgba(11, 15, 25, 0.8) !important;
+        backdrop-filter: blur(15px);
+        border-right: 1px solid rgba(255, 255, 255, 0.05) !important;
+    }
+    
