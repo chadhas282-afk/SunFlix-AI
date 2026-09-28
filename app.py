@@ -183,8 +183,13 @@ def get_recommendations(user_query: str, intensity: str, preferred_languages: li
     else:
         sampled = top_10
 
-         sampled.sort(key=lambda x: x['score'], reverse=True)
+    sampled.sort(key=lambda x: x['score'], reverse=True)
     return [sm['movie'] for sm in sampled]
 
 def get_surprise_recommendation():
     hour = datetime.datetime.now().hour
+     time_mood = "I want to relax and wind down"
+    if 6 <= hour < 12:
+        time_mood = "I need high energy, motivation, and inspiration to start the day"
+    elif 12 <= hour < 17:
+        time_mood = "I am bored and need something fast-paced, exciting, and highly engaging"
