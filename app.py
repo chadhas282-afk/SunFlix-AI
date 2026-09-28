@@ -139,3 +139,7 @@ def compute_embeddings(_model, movies):
 movies = load_database()
 model = load_model()
 movie_embeddings = compute_embeddings(model, movies)
+
+def get_recommendations(user_query: str, intensity: str, preferred_languages: list = None):
+    valid_langs = {"english", "hindi"}
+    if preferred_languages and len(preferred_languages) > 0:
