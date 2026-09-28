@@ -128,8 +128,14 @@ def load_database():
 @st.cache_resource
 def load_model():
     print("Loading SentenceTransformer model...")
-     return SentenceTransformer('all-MiniLM-L6-v2')
+    return SentenceTransformer('all-MiniLM-L6-v2')
 
 @st.cache_data
 def compute_embeddings(_model, movies):
     print("Computing movie embeddings...")
+    descriptions = [m['description'] for m in movies]
+    return _model.encode(descriptions)
+
+movies = load_database()
+model = load_model()
+movie_embeddings = compute_embeddings(model, movies)
