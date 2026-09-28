@@ -113,3 +113,8 @@ st.markdown("""
         background: rgba(255, 255, 255, 0.03) !important;
         border: 1px solid rgba(255, 255, 255, 0.08) !important;
         border-radius: 8px !important;
+         }
+</style>
+""", unsafe_allow_html=True)
+
+if "history" not in st.session_state:
