@@ -177,4 +177,9 @@ def get_recommendations(user_query: str, intensity: str, preferred_languages: li
         
     scored_movies.sort(key=lambda x: x['score'], reverse=True)
     top_10 = scored_movies[:10]
-    
+
+    if len(top_10) >= 3:
+        sampled = random.sample(top_10, 3)
+    else:
+        sampled = top_10
+        
