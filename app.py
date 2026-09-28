@@ -223,3 +223,8 @@ def render_movie_card(movie):
         .badge-Disney {{ background: linear-gradient(45deg, #113CCF, #000066); }}
         .badge-Hulu {{ background: linear-gradient(45deg, #1ce783, #0b6b3c); color: black; }}
         .badge-HBO {{ background: linear-gradient(45deg, #511257, #2c0830); }}
+        .badge-Apple {{ background: linear-gradient(45deg, #a6b1b7, #555555); color: black; }}
+    </style>
+    <div class="glass-card">
+        <div class="movie-title">{movie['title']}</div>
+        
