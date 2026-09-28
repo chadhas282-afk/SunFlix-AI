@@ -213,3 +213,8 @@ def render_movie_card(movie):
         .glass-card {{ background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 20px; padding: 25px; margin-bottom: 25px; }}
         .movie-title {{ font-size: 2rem; font-weight: 800; background: linear-gradient(45deg, #ff4b4b, #ff8f00); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 15px; }}
         .metadata-grid {{ display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; margin-bottom: 20px; }}
+         .meta-box {{ background: rgba(0,0,0,0.3); padding: 15px; border-radius: 12px; text-align: center; }}
+        .meta-box h4 {{ margin: 0; font-size: 0.8rem; color: #94a3b8; text-transform: uppercase; }}
+        .meta-box p {{ margin: 5px 0 0 0; font-size: 1.1rem; font-weight: 600; color: #e2e8f0; }}
+        .rating-wrap {{ display: inline-flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.1); padding: 5px 12px; border-radius: 15px; margin-right: 10px; }}
+        .badge {{ display: inline-block; padding: 6px 12px; border-radius: 20px; font-size: 0.85rem; font-weight: bold; margin-right: 8px; color: white; }}
