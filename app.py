@@ -218,3 +218,8 @@ def render_movie_card(movie):
         .meta-box p {{ margin: 5px 0 0 0; font-size: 1.1rem; font-weight: 600; color: #e2e8f0; }}
         .rating-wrap {{ display: inline-flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.1); padding: 5px 12px; border-radius: 15px; margin-right: 10px; }}
         .badge {{ display: inline-block; padding: 6px 12px; border-radius: 20px; font-size: 0.85rem; font-weight: bold; margin-right: 8px; color: white; }}
+        .badge-Netflix {{ background: linear-gradient(45deg, #E50914, #900000); }}
+        .badge-Prime {{ background: linear-gradient(45deg, #00A8E1, #005A9E); }}
+        .badge-Disney {{ background: linear-gradient(45deg, #113CCF, #000066); }}
+        .badge-Hulu {{ background: linear-gradient(45deg, #1ce783, #0b6b3c); color: black; }}
+        .badge-HBO {{ background: linear-gradient(45deg, #511257, #2c0830); }}
