@@ -108,4 +108,8 @@ st.markdown("""
         backdrop-filter: blur(15px);
         border-right: 1px solid rgba(255, 255, 255, 0.05) !important;
     }
-    
+    /* Expander UI */
+    [data-testid="stExpander"] {
+        background: rgba(255, 255, 255, 0.03) !important;
+        border: 1px solid rgba(255, 255, 255, 0.08) !important;
+        border-radius: 8px !important;
