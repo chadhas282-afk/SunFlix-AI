@@ -148,3 +148,8 @@ def get_recommendations(user_query: str, intensity: str, preferred_languages: li
         if not active_langs:
             active_langs = valid_langs
     else:
+        active_langs = valid_langs
+
+    filtered_movies = [m for m in movies if m['language'].lower() in active_langs]
+
+    if not filtered_movies:
