@@ -243,3 +243,8 @@ def render_movie_card(movie):
                 <h4>Primary Emotion</h4>
                 <p>{movie.get('primary_emotion', 'N/A')}</p>
             </div>
+            <div class="meta-box">
+                <h4>Tone Check</h4>
+                <p>{movie.get('tone_check', 'N/A')}</p>
+            </div>
+            <div class="meta-box">
