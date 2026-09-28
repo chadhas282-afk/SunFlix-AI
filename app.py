@@ -123,3 +123,8 @@ if "history" not in st.session_state:
 @st.cache_data
 def load_database():
     with open("database.json", "r") as f:
+         return json.load(f)
+
+@st.cache_resource
+def load_model():
+    print("Loading SentenceTransformer model...")
