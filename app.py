@@ -203,3 +203,8 @@ def get_surprise_recommendation():
 def render_movie_card(movie):
     platforms_html = ""
     for p in movie.get("where_to_watch", []):
+        p_class = p.split()[0].replace("+", "")
+        platforms_html += f"<span class='badge badge-{p_class}'>{p}</span>"
+        
+    html = f"""
+    <style>
