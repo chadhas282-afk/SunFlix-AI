@@ -118,3 +118,8 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 if "history" not in st.session_state:
+     st.session_state.history = []
+
+@st.cache_data
+def load_database():
+    with open("database.json", "r") as f:
