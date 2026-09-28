@@ -182,4 +182,9 @@ def get_recommendations(user_query: str, intensity: str, preferred_languages: li
         sampled = random.sample(top_10, 3)
     else:
         sampled = top_10
-        
+
+         sampled.sort(key=lambda x: x['score'], reverse=True)
+    return [sm['movie'] for sm in sampled]
+
+def get_surprise_recommendation():
+    hour = datetime.datetime.now().hour
