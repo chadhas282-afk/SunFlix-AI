@@ -238,3 +238,8 @@ def render_movie_card(movie):
             {movie['description']}
         </p>
         
+         <div class="metadata-grid">
+            <div class="meta-box">
+                <h4>Primary Emotion</h4>
+                <p>{movie.get('primary_emotion', 'N/A')}</p>
+            </div>
