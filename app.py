@@ -173,3 +173,8 @@ def get_recommendations(user_query: str, intensity: str, preferred_languages: li
         scored_movies.append({
             "movie": movie,
             "score": score
+            })
+        
+    scored_movies.sort(key=lambda x: x['score'], reverse=True)
+    top_10 = scored_movies[:10]
+    
