@@ -233,3 +233,8 @@ def render_movie_card(movie):
             <span class="rating-wrap">🍅 {movie['rotten_tomatoes']} RT</span>
             <span class="rating-wrap">🗣️ {movie['language']}</span>
         </div>
+               
+        <p style="font-size: 1.1rem; color: #cbd5e1; line-height: 1.6; margin-bottom: 20px;">
+            {movie['description']}
+        </p>
+        
