@@ -163,3 +163,8 @@ def get_recommendations(user_query: str, intensity: str, preferred_languages: li
     for idx, movie in enumerate(movies):
         if movie['language'].lower() not in active_langs:
             continue
+                   
+        score = float(similarities[idx])
+        if intensity == "Low":
+            score *= random.uniform(0.8, 1.0)
+        elif intensity == "Intense":
