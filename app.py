@@ -153,3 +153,8 @@ def get_recommendations(user_query: str, intensity: str, preferred_languages: li
     filtered_movies = [m for m in movies if m['language'].lower() in active_langs]
 
     if not filtered_movies:
+        return []
+
+    query_embedding = model.encode([user_query])
+    
+    similarities = cosine_similarity(query_embedding, movie_embeddings)[0]
