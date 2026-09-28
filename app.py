@@ -143,3 +143,8 @@ movie_embeddings = compute_embeddings(model, movies)
 def get_recommendations(user_query: str, intensity: str, preferred_languages: list = None):
     valid_langs = {"english", "hindi"}
     if preferred_languages and len(preferred_languages) > 0:
+        pref_langs_lower = {lang.lower() for lang in preferred_languages}
+        active_langs = pref_langs_lower.intersection(valid_langs)
+        if not active_langs:
+            active_langs = valid_langs
+    else:
