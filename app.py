@@ -228,3 +228,8 @@ def render_movie_card(movie):
     <div class="glass-card">
         <div class="movie-title">{movie['title']}</div>
         
+        <div style="margin-bottom: 20px;">
+            <span class="rating-wrap">⭐ {movie['imdb_rating']} IMDb</span>
+            <span class="rating-wrap">🍅 {movie['rotten_tomatoes']} RT</span>
+            <span class="rating-wrap">🗣️ {movie['language']}</span>
+        </div>
