@@ -208,3 +208,8 @@ def render_movie_card(movie):
         
     html = f"""
     <style>
+     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+        body {{ font-family: 'Inter', sans-serif; color: #f8fafc; margin: 0; padding: 0; }}
+        .glass-card {{ background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 20px; padding: 25px; margin-bottom: 25px; }}
+        .movie-title {{ font-size: 2rem; font-weight: 800; background: linear-gradient(45deg, #ff4b4b, #ff8f00); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 15px; }}
+        .metadata-grid {{ display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; margin-bottom: 20px; }}
