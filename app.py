@@ -193,3 +193,8 @@ def get_surprise_recommendation():
         time_mood = "I need high energy, motivation, and inspiration to start the day"
     elif 12 <= hour < 17:
         time_mood = "I am bored and need something fast-paced, exciting, and highly engaging"
+    elif 17 <= hour < 22:
+        time_mood = "I want a great drama or an emotionally engaging story to watch after work"
+    else:
+        time_mood = "I want something dark, psychological, or thought-provoking for a late night watch"
+        
