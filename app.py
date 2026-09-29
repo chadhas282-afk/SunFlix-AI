@@ -327,4 +327,9 @@ with col_btn3:
 if (recommend_btn or regenerate_btn) and user_mood.strip():
     with st.spinner("Analyzing neural network and calculating vectors locally..."):
         recs = get_recommendations(user_mood, intensity, languages)
-        
+
+         if recs:
+            st.session_state.history.insert(0, {
+                "timestamp": datetime.datetime.now().isoformat(),
+                "mood_text": user_mood.strip(),
+                "intensity": intensity,
