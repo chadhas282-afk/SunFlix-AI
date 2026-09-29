@@ -268,7 +268,7 @@ with st.sidebar:
     st.write("---")
     
     col_avi, col_info = st.columns([1,3])
-     with col_avi:
+    with col_avi:
         st.markdown("<div style='font-size:40px; margin-top:-10px;'>👤</div>", unsafe_allow_html=True)
     with col_info:
         st.markdown("**User:** cinephile_99")
