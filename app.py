@@ -322,3 +322,9 @@ with col_btn2:
     regenerate_btn = st.button("Regenerate / Try Other Matches 🔄", use_container_width=True)
 with col_btn3:
     surprise_btn = st.button("Surprise Me (Adaptive) 🎲", use_container_width=True)
+
+
+if (recommend_btn or regenerate_btn) and user_mood.strip():
+    with st.spinner("Analyzing neural network and calculating vectors locally..."):
+        recs = get_recommendations(user_mood, intensity, languages)
+        
