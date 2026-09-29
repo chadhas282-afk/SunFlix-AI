@@ -298,3 +298,8 @@ with st.sidebar:
             st.write(f"**Mood:** {s['mood_text']}")
             st.write(f"**Intensity:** {s['intensity']}")
             st.caption(f"{s['timestamp'][:16]}")
+
+col_spacer1, col_logo, col_title, col_spacer2 = st.columns([3, 1, 4, 2])
+with col_logo:
+    st.image("logo.png", width=120)
+with col_title:
