@@ -333,3 +333,8 @@ if (recommend_btn or regenerate_btn) and user_mood.strip():
                 "timestamp": datetime.datetime.now().isoformat(),
                 "mood_text": user_mood.strip(),
                 "intensity": intensity,
+                "recommended_movie": recs[0]["title"]
+            })
+            
+            st.markdown("### 🍿 Top AI Recommendations")
+            for movie in recs:
