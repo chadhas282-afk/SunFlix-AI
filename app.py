@@ -283,3 +283,8 @@ with st.sidebar:
         stats = {}
         for h in history:
             stats[h['mood_text']] = stats.get(h['mood_text'], 0) + 1
+                        
+        dominant = max(stats, key=stats.get)
+        st.info(f"Your dominant mood: **{dominant}**")
+        for k, v in stats.items():
+            st.progress(min(v * 10, 100), text=f"\"{k}\" ({v} searches)")
