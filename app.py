@@ -253,3 +253,8 @@ def render_movie_card(movie):
             </div>
         </div>
         
+        <div class="badge-container">
+            <span style="color: #94a3b8; font-size: 0.9rem; margin-right: 10px;">Available on:</span>
+            {platforms_html}
+        </div>
+    </div>
