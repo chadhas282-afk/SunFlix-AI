@@ -293,3 +293,8 @@ with st.sidebar:
     
     st.write("---")
     st.markdown("### 🕒 Recent Search Logs")
+    for s in history[:5]:
+        with st.expander(f"{s['recommended_movie']}"):
+            st.write(f"**Mood:** {s['mood_text']}")
+            st.write(f"**Intensity:** {s['intensity']}")
+            st.caption(f"{s['timestamp'][:16]}")
