@@ -319,3 +319,6 @@ col_btn1, col_btn2, col_btn3 = st.columns(3)
 with col_btn1:
     recommend_btn = st.button("Generate Recommendations ✨", use_container_width=True, type="primary")
 with col_btn2:
+    regenerate_btn = st.button("Regenerate / Try Other Matches 🔄", use_container_width=True)
+with col_btn3:
+    surprise_btn = st.button("Surprise Me (Adaptive) 🎲", use_container_width=True)
