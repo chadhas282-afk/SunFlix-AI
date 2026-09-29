@@ -278,3 +278,8 @@ with st.sidebar:
     
     history = st.session_state.history
     st.markdown("### 📊 Mood Analytics (Weekly)")
+       
+    if history:
+        stats = {}
+        for h in history:
+            stats[h['mood_text']] = stats.get(h['mood_text'], 0) + 1
