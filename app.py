@@ -262,3 +262,9 @@ def render_movie_card(movie):
     
     clean_html = html.replace("```html", "").replace("```", "").strip()
     components.html(clean_html, height=450, scrolling=True)
+
+with st.sidebar:
+    st.image("logo.png", use_container_width=True)
+    st.write("---")
+    
+    col_avi, col_info = st.columns([1,3])
