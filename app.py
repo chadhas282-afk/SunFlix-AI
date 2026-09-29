@@ -303,3 +303,9 @@ col_spacer1, col_logo, col_title, col_spacer2 = st.columns([3, 1, 4, 2])
 with col_logo:
     st.image("logo.png", width=120)
 with col_title:
+    st.markdown("<div style='text-align: left; font-size: 3.5rem; font-weight: bold; margin-bottom: 0; margin-top: 10px; white-space: nowrap;'>SunFlix AI</div>", unsafe_allow_html=True)
+st.markdown("<p style='text-align: center; color: #94a3b8; font-size: 1.2rem; margin-bottom: 40px;'>Describe your mood. Let AI find the perfect movie instantly.</p>", unsafe_allow_html=True)
+
+user_mood = st.text_area("How are you feeling right now?", height=100, placeholder="e.g., I had a terrible day at work and need to vent out some anger...")
+
+col1, col2 = st.columns(2)
