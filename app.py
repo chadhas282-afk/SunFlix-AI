@@ -248,3 +248,8 @@ def render_movie_card(movie):
                 <p>{movie.get('tone_check', 'N/A')}</p>
             </div>
             <div class="meta-box">
+            <h4>Why Watch This</h4>
+                <p style="font-size: 0.9rem;">{movie.get('why_watch', 'N/A')}</p>
+            </div>
+        </div>
+        
