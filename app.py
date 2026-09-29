@@ -28,17 +28,17 @@ st.markdown("""
     }
     [data-testid="stHeader"] {
         background: rgba(0,0,0,0) !important;
-        }
+    }
 
     /* Style the Text Area Container and Input */
     div[data-baseweb="textarea"] {
         background: rgba(255, 255, 255, 0.05) !important;
-         border: 1px solid rgba(255, 255, 255, 0.1) !important;
+        border: 1px solid rgba(255, 255, 255, 0.1) !important;
         border-radius: 12px !important;
         transition: all 0.3s ease;
     }
     div[data-baseweb="textarea"] > div {
-    background: transparent !important;
+        background: transparent !important;
     }
     div[data-baseweb="textarea"] textarea {
         color: #fff !important;
@@ -48,7 +48,7 @@ st.markdown("""
     div[data-baseweb="textarea"]:focus-within {
         border-color: #ff4b4b !important;
         box-shadow: 0 0 15px rgba(255, 75, 75, 0.4) !important;
-        }
+    }
     
     /* Text Area Label */
     .stTextArea label, label[data-testid="stWidgetLabel"] {
@@ -58,7 +58,7 @@ st.markdown("""
     }
 
     /* Primary Generate Button */
-     button[kind="primary"] {
+    button[kind="primary"] {
         background: linear-gradient(45deg, #ff4b4b, #ff8f00) !important;
         color: white !important;
         border: none !important;
@@ -83,12 +83,12 @@ st.markdown("""
         padding: 10px 24px !important;
         font-weight: 600 !important;
         transition: all 0.3s ease !important;
-        }
+    }
     button[kind="secondary"]:hover {
         background: rgba(255, 255, 255, 0.15) !important;
         border-color: #cbd5e1 !important;
         color: #fff !important;
-        }
+    }
 
     /* Multiselect and Select Slider Tweaks */
     div[data-baseweb="select"] {
@@ -98,32 +98,32 @@ st.markdown("""
         color: white !important;
     }
     div[data-baseweb="select"] > div {
-    div[data-baseweb="select"] > div {
         background: transparent !important;
     }
     
     /* Sidebar Styling */
     [data-testid="stSidebar"] {
-    background: rgba(11, 15, 25, 0.8) !important;
+        background: rgba(11, 15, 25, 0.8) !important;
         backdrop-filter: blur(15px);
         border-right: 1px solid rgba(255, 255, 255, 0.05) !important;
     }
+    
     /* Expander UI */
     [data-testid="stExpander"] {
         background: rgba(255, 255, 255, 0.03) !important;
         border: 1px solid rgba(255, 255, 255, 0.08) !important;
         border-radius: 8px !important;
-         }
+    }
 </style>
 """, unsafe_allow_html=True)
 
 if "history" not in st.session_state:
-     st.session_state.history = []
+    st.session_state.history = []
 
 @st.cache_data
 def load_database():
     with open("database.json", "r") as f:
-         return json.load(f)
+        return json.load(f)
 
 @st.cache_resource
 def load_model():
@@ -158,12 +158,12 @@ def get_recommendations(user_query: str, intensity: str, preferred_languages: li
     query_embedding = model.encode([user_query])
     
     similarities = cosine_similarity(query_embedding, movie_embeddings)[0]
-        
+    
     scored_movies = []
     for idx, movie in enumerate(movies):
         if movie['language'].lower() not in active_langs:
             continue
-                   
+            
         score = float(similarities[idx])
         if intensity == "Low":
             score *= random.uniform(0.8, 1.0)
@@ -173,16 +173,16 @@ def get_recommendations(user_query: str, intensity: str, preferred_languages: li
         scored_movies.append({
             "movie": movie,
             "score": score
-            })
+        })
         
     scored_movies.sort(key=lambda x: x['score'], reverse=True)
     top_10 = scored_movies[:10]
-
+    
     if len(top_10) >= 3:
         sampled = random.sample(top_10, 3)
     else:
         sampled = top_10
-
+        
     sampled.sort(key=lambda x: x['score'], reverse=True)
     return [sm['movie'] for sm in sampled]
 
@@ -197,8 +197,8 @@ def get_surprise_recommendation():
         time_mood = "I want a great drama or an emotionally engaging story to watch after work"
     else:
         time_mood = "I want something dark, psychological, or thought-provoking for a late night watch"
-
-        return get_recommendations(time_mood, "Medium", ["English", "Hindi"])
+        
+    return get_recommendations(time_mood, "Medium", ["English", "Hindi"])
 
 def render_movie_card(movie):
     platforms_html = ""
@@ -208,12 +208,12 @@ def render_movie_card(movie):
         
     html = f"""
     <style>
-     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
         body {{ font-family: 'Inter', sans-serif; color: #f8fafc; margin: 0; padding: 0; }}
         .glass-card {{ background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 20px; padding: 25px; margin-bottom: 25px; }}
         .movie-title {{ font-size: 2rem; font-weight: 800; background: linear-gradient(45deg, #ff4b4b, #ff8f00); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 15px; }}
         .metadata-grid {{ display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; margin-bottom: 20px; }}
-         .meta-box {{ background: rgba(0,0,0,0.3); padding: 15px; border-radius: 12px; text-align: center; }}
+        .meta-box {{ background: rgba(0,0,0,0.3); padding: 15px; border-radius: 12px; text-align: center; }}
         .meta-box h4 {{ margin: 0; font-size: 0.8rem; color: #94a3b8; text-transform: uppercase; }}
         .meta-box p {{ margin: 5px 0 0 0; font-size: 1.1rem; font-weight: 600; color: #e2e8f0; }}
         .rating-wrap {{ display: inline-flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.1); padding: 5px 12px; border-radius: 15px; margin-right: 10px; }}
@@ -233,12 +233,12 @@ def render_movie_card(movie):
             <span class="rating-wrap">🍅 {movie['rotten_tomatoes']} RT</span>
             <span class="rating-wrap">🗣️ {movie['language']}</span>
         </div>
-               
+        
         <p style="font-size: 1.1rem; color: #cbd5e1; line-height: 1.6; margin-bottom: 20px;">
             {movie['description']}
         </p>
         
-         <div class="metadata-grid">
+        <div class="metadata-grid">
             <div class="meta-box">
                 <h4>Primary Emotion</h4>
                 <p>{movie.get('primary_emotion', 'N/A')}</p>
@@ -248,7 +248,7 @@ def render_movie_card(movie):
                 <p>{movie.get('tone_check', 'N/A')}</p>
             </div>
             <div class="meta-box">
-            <h4>Why Watch This</h4>
+                <h4>Why Watch This</h4>
                 <p style="font-size: 0.9rem;">{movie.get('why_watch', 'N/A')}</p>
             </div>
         </div>
@@ -258,7 +258,7 @@ def render_movie_card(movie):
             {platforms_html}
         </div>
     </div>
-     """
+    """
     
     clean_html = html.replace("```html", "").replace("```", "").strip()
     components.html(clean_html, height=450, scrolling=True)
@@ -273,22 +273,22 @@ with st.sidebar:
     with col_info:
         st.markdown("**User:** cinephile_99")
         st.caption("Premium Member")
-           
+    
     st.write("---")
     
     history = st.session_state.history
     st.markdown("### 📊 Mood Analytics (Weekly)")
-       
+    
     if history:
         stats = {}
         for h in history:
             stats[h['mood_text']] = stats.get(h['mood_text'], 0) + 1
-                        
+            
         dominant = max(stats, key=stats.get)
         st.info(f"Your dominant mood: **{dominant}**")
         for k, v in stats.items():
             st.progress(min(v * 10, 100), text=f"\"{k}\" ({v} searches)")
-             else:
+    else:
         st.write("No stats yet. Start searching!")
     
     st.write("---")
@@ -327,8 +327,8 @@ with col_btn3:
 if (recommend_btn or regenerate_btn) and user_mood.strip():
     with st.spinner("Analyzing neural network and calculating vectors locally..."):
         recs = get_recommendations(user_mood, intensity, languages)
-
-         if recs:
+        
+        if recs:
             st.session_state.history.insert(0, {
                 "timestamp": datetime.datetime.now().isoformat(),
                 "mood_text": user_mood.strip(),
@@ -343,8 +343,12 @@ if (recommend_btn or regenerate_btn) and user_mood.strip():
             st.error("No matches found for the selected language filter.")
 
 if surprise_btn:
-     with st.spinner("Running adaptive time-based logic..."):
+    with st.spinner("Running adaptive time-based logic..."):
         recs = get_surprise_recommendation()
         
         if recs:
             st.markdown("### 🎲 Surprise Matches for the Hour")
+            for movie in recs:
+                render_movie_card(movie)
+        else:
+            st.error("No matches found.")
