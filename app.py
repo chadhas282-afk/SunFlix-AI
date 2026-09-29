@@ -273,3 +273,8 @@ with st.sidebar:
     with col_info:
         st.markdown("**User:** cinephile_99")
         st.caption("Premium Member")
+           
+    st.write("---")
+    
+    history = st.session_state.history
+    st.markdown("### 📊 Mood Analytics (Weekly)")
