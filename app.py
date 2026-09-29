@@ -309,3 +309,7 @@ st.markdown("<p style='text-align: center; color: #94a3b8; font-size: 1.2rem; ma
 user_mood = st.text_area("How are you feeling right now?", height=100, placeholder="e.g., I had a terrible day at work and need to vent out some anger...")
 
 col1, col2 = st.columns(2)
+with col1:
+    languages = st.multiselect("Preferred Languages", ["English", "Hindi"], default=["English", "Hindi"])
+with col2:
+    intensity = st.select_slider("Mood Intensity", options=["Low", "Medium", "Intense"], value="Medium")
