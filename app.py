@@ -288,3 +288,8 @@ with st.sidebar:
         st.info(f"Your dominant mood: **{dominant}**")
         for k, v in stats.items():
             st.progress(min(v * 10, 100), text=f"\"{k}\" ({v} searches)")
+             else:
+        st.write("No stats yet. Start searching!")
+    
+    st.write("---")
+    st.markdown("### 🕒 Recent Search Logs")
