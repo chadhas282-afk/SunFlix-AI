@@ -343,3 +343,8 @@ if (recommend_btn or regenerate_btn) and user_mood.strip():
             st.error("No matches found for the selected language filter.")
 
 if surprise_btn:
+     with st.spinner("Running adaptive time-based logic..."):
+        recs = get_surprise_recommendation()
+        
+        if recs:
+            st.markdown("### 🎲 Surprise Matches for the Hour")
