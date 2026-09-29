@@ -258,3 +258,7 @@ def render_movie_card(movie):
             {platforms_html}
         </div>
     </div>
+     """
+    
+    clean_html = html.replace("```html", "").replace("```", "").strip()
+    components.html(clean_html, height=450, scrolling=True)
