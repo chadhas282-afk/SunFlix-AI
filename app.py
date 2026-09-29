@@ -338,3 +338,8 @@ if (recommend_btn or regenerate_btn) and user_mood.strip():
             
             st.markdown("### 🍿 Top AI Recommendations")
             for movie in recs:
+                render_movie_card(movie)
+        else:
+            st.error("No matches found for the selected language filter.")
+
+if surprise_btn:
