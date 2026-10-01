@@ -178,3 +178,8 @@
   {
     "title": "Good Will Hunting",
     "language": "English",
+     "imdb_rating": "8.3",
+    "rotten_tomatoes": "97%",
+    "description": "A moving, deeply emotional psychological drama about trauma and healing. It is a beautiful film that tackles sadness and emotional walls, leading to incredibly cathartic and uplifting moments.",
+    "primary_emotion": "Sad / Heartbroken",
+    "tone_check": "Psychological, Healing, Cathartic",
