@@ -204,3 +204,7 @@
     "rotten_tomatoes": "87%",
     "description": "A highly engaging, complex, and mind-bending sci-fi thriller. When you are feeling bored or lethargic, this movie demands your full attention and completely immerses you in its gripping puzzle.",
     "primary_emotion": "Bored / Lethargic",
+     "tone_check": "Mind-bending, Complex, Gripping",
+    "why_watch": "A cinematic puzzle that will instantly wake up your brain.",
+    "where_to_watch": ["HBO Max"]
+  },
