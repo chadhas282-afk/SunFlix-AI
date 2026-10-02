@@ -343,3 +343,8 @@
   {
     "title": "Dangal",
     "language": "Hindi",
+     "imdb_rating": "8.3",
+    "rotten_tomatoes": "88%",
+    "description": "A fiercely determined, emotionally powerful, and highly inspirational sports biography. Watching these athletes overcome immense odds will completely destroy your laziness and fill you with drive.",
+    "primary_emotion": "Unmotivated / Lazy",
+    "tone_check": "Inspirational, Determined, Powerful",
