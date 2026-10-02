@@ -353,3 +353,9 @@
   },
   {
     "title": "Rocky",
+     "language": "English",
+    "imdb_rating": "8.1",
+    "rotten_tomatoes": "92%",
+    "description": "The ultimate underdog story. It is a gritty, inspiring, and triumphant sports drama that shows the value of pushing yourself beyond your limits. The perfect cure for a lack of motivation.",
+    "primary_emotion": "Unmotivated / Lazy",
+    "tone_check": "Triumphant, Gritty, Inspiring",
