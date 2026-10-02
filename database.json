@@ -8,7 +8,7 @@
     "primary_emotion": "Stressed / Overwhelmed",
     "tone_check": "Light-hearted, Relaxing, Comforting",
     "why_watch": "A perfect escape when life feels too heavy. Just relax and enjoy.",
-     "where_to_watch": ["Netflix", "Prime Video"]
+    "where_to_watch": ["Netflix", "Prime Video"]
   },
   {
     "title": "The Intern",
@@ -39,7 +39,7 @@
     "rotten_tomatoes": "87%",
     "description": "A feel-good, completely delightful, and visually satisfying movie about a chef rediscovering his passion through a food truck. The vibrant music and delicious visuals melt away stress and anxiety.",
     "primary_emotion": "Stressed / Overwhelmed",
-     "tone_check": "Feel-good, Light-hearted, Satisfying",
+    "tone_check": "Feel-good, Light-hearted, Satisfying",
     "why_watch": "Great food, great music, and a wonderfully soothing vibe.",
     "where_to_watch": ["Prime Video"]
   },
@@ -53,7 +53,7 @@
     "tone_check": "Gentle, Comforting, Wholesome",
     "why_watch": "A cozy, stress-free watch that feels like drinking warm tea on a rainy day.",
     "where_to_watch": ["Netflix"]
-    },
+  },
   {
     "title": "Paddington 2",
     "language": "English",
@@ -69,7 +69,7 @@
     "title": "John Wick",
     "language": "English",
     "imdb_rating": "7.4",
-     "rotten_tomatoes": "86%",
+    "rotten_tomatoes": "86%",
     "description": "A high-octane, adrenaline-pumping revenge thriller full of dark action, anger, and betrayal. When you are deeply frustrated, watching this relentless, stylish gun-fu masterpiece is an incredible release.",
     "primary_emotion": "Angry / Frustrated",
     "tone_check": "Intense, Dark, Action-packed",
@@ -108,12 +108,12 @@
     "tone_check": "Violent, Toxic, Rage-fueled",
     "why_watch": "Unrestrained cinematic rage and high-octane violence.",
     "where_to_watch": ["Netflix"]
-    },
+  },
   {
     "title": "Fight Club",
     "language": "English",
     "imdb_rating": "8.8",
-     "rotten_tomatoes": "79%",
+    "rotten_tomatoes": "79%",
     "description": "A cynical, dark, and deeply frustrated psychological thriller that rebels against modern society. When you are feeling angry at the world, this gritty masterpiece provides the ultimate rebellious release.",
     "primary_emotion": "Angry / Frustrated",
     "tone_check": "Cynical, Rebellious, Gritty",
@@ -149,7 +149,7 @@
     "rotten_tomatoes": "92%",
     "description": "A profoundly sad, emotional, and beautiful film about a misunderstood dyslexic child. When you are feeling heartbroken or down, this movie provides a deep emotional release and immense empathy.",
     "primary_emotion": "Sad / Heartbroken",
-     "tone_check": "Profound, Empathic, Tear-jerking",
+    "tone_check": "Profound, Empathic, Tear-jerking",
     "why_watch": "A beautiful masterpiece that lets you release sadness through tears.",
     "where_to_watch": ["Netflix"]
   },
@@ -158,12 +158,12 @@
     "language": "English",
     "imdb_rating": "8.3",
     "rotten_tomatoes": "92%",
-     "description": "A visually striking, bittersweet, and emotionally devastating film about erasing memories of a failed relationship. It is profoundly sad but deeply therapeutic for anyone who is heartbroken.",
+    "description": "A visually striking, bittersweet, and emotionally devastating film about erasing memories of a failed relationship. It is profoundly sad but deeply therapeutic for anyone who is heartbroken.",
     "primary_emotion": "Sad / Heartbroken",
     "tone_check": "Bittersweet, Melancholic, Therapeutic",
     "why_watch": "The definitive movie for dealing with heartbreak and lost love.",
     "where_to_watch": ["Peacock"]
-    },
+  },
   {
     "title": "Kal Ho Naa Ho",
     "language": "Hindi",
@@ -178,12 +178,12 @@
   {
     "title": "Good Will Hunting",
     "language": "English",
-     "imdb_rating": "8.3",
+    "imdb_rating": "8.3",
     "rotten_tomatoes": "97%",
     "description": "A moving, deeply emotional psychological drama about trauma and healing. It is a beautiful film that tackles sadness and emotional walls, leading to incredibly cathartic and uplifting moments.",
     "primary_emotion": "Sad / Heartbroken",
     "tone_check": "Psychological, Healing, Cathartic",
-     "why_watch": "A brilliant exploration of emotional pain and the journey to overcome it.",
+    "why_watch": "A brilliant exploration of emotional pain and the journey to overcome it.",
     "where_to_watch": ["HBO Max"]
   },
   {
@@ -204,7 +204,7 @@
     "rotten_tomatoes": "87%",
     "description": "A highly engaging, complex, and mind-bending sci-fi thriller. When you are feeling bored or lethargic, this movie demands your full attention and completely immerses you in its gripping puzzle.",
     "primary_emotion": "Bored / Lethargic",
-     "tone_check": "Mind-bending, Complex, Gripping",
+    "tone_check": "Mind-bending, Complex, Gripping",
     "why_watch": "A cinematic puzzle that will instantly wake up your brain.",
     "where_to_watch": ["HBO Max"]
   },
@@ -218,7 +218,7 @@
     "tone_check": "Unpredictable, Twisted, Fast-paced",
     "why_watch": "Constantly surprising; it will cure your boredom immediately.",
     "where_to_watch": ["Netflix"]
-    },
+  },
   {
     "title": "The Hangover",
     "language": "English",
@@ -238,7 +238,7 @@
     "description": "An incredibly smart, tightly-plotted, and highly suspenseful mystery thriller. The cat-and-mouse mind games will immediately snap you out of your lethargy and keep you guessing until the end.",
     "primary_emotion": "Bored / Lethargic",
     "tone_check": "Smart, Suspenseful, Tense",
-     "why_watch": "An intellectually engaging thriller that refuses to let you get bored.",
+    "why_watch": "An intellectually engaging thriller that refuses to let you get bored.",
     "where_to_watch": ["Disney+"]
   },
   {
@@ -253,7 +253,7 @@
     "where_to_watch": ["Hulu"]
   },
   {
-     "title": "Hera Pheri",
+    "title": "Hera Pheri",
     "language": "Hindi",
     "imdb_rating": "8.1",
     "rotten_tomatoes": "85%",
@@ -273,7 +273,7 @@
     "tone_check": "Timeless, Hopeful, Profound",
     "why_watch": "A story of hope and deep human connection that cures loneliness.",
     "where_to_watch": ["HBO Max"]
-    },
+  },
   {
     "title": "Dil Chahta Hai",
     "language": "Hindi",
@@ -283,7 +283,7 @@
     "primary_emotion": "Nostalgic / Lonely",
     "tone_check": "Warm, Nostalgic, Friendship-driven",
     "why_watch": "Brings back fond memories of youth, friends, and simpler times.",
-     "where_to_watch": ["Prime Video"]
+    "where_to_watch": ["Prime Video"]
   },
   {
     "title": "Forrest Gump",
@@ -293,7 +293,7 @@
     "description": "An epic, sentimental, and nostalgic journey through decades of American history. It tackles themes of loneliness and destiny with such warmth that it leaves you feeling deeply connected to humanity.",
     "primary_emotion": "Nostalgic / Lonely",
     "tone_check": "Sentimental, Epic, Heartwarming",
-     "why_watch": "A beautiful, sweeping story that makes you feel less alone in the world.",
+    "why_watch": "A beautiful, sweeping story that makes you feel less alone in the world.",
     "where_to_watch": ["Paramount+"]
   },
   {
@@ -328,7 +328,7 @@
     "tone_check": "Earnest, Grounded, Heartfelt",
     "why_watch": "A beautiful reminder of home, purpose, and community.",
     "where_to_watch": ["Netflix"]
-    },
+  },
   {
     "title": "Whiplash",
     "language": "English",
@@ -343,7 +343,7 @@
   {
     "title": "Dangal",
     "language": "Hindi",
-     "imdb_rating": "8.3",
+    "imdb_rating": "8.3",
     "rotten_tomatoes": "88%",
     "description": "A fiercely determined, emotionally powerful, and highly inspirational sports biography. Watching these athletes overcome immense odds will completely destroy your laziness and fill you with drive.",
     "primary_emotion": "Unmotivated / Lazy",
@@ -353,7 +353,7 @@
   },
   {
     "title": "Rocky",
-     "language": "English",
+    "language": "English",
     "imdb_rating": "8.1",
     "rotten_tomatoes": "92%",
     "description": "The ultimate underdog story. It is a gritty, inspiring, and triumphant sports drama that shows the value of pushing yourself beyond your limits. The perfect cure for a lack of motivation.",
@@ -363,13 +363,13 @@
     "where_to_watch": ["Prime Video"]
   },
   {
-     "title": "Bhaag Milkha Bhaag",
+    "title": "Bhaag Milkha Bhaag",
     "language": "Hindi",
     "imdb_rating": "8.2",
     "rotten_tomatoes": "75%",
     "description": "An intense, emotionally charged, and highly motivational biographical epic about India's greatest runner. His sheer willpower and grueling training will instantly spark your own motivation.",
     "primary_emotion": "Unmotivated / Lazy",
-     "tone_check": "Intense, Epic, Motivational",
+    "tone_check": "Intense, Epic, Motivational",
     "why_watch": "A testament to human endurance and unbreakable willpower.",
     "where_to_watch": ["Disney+"]
   },
@@ -383,17 +383,17 @@
     "tone_check": "Stimulating, Energetic, Ambitious",
     "why_watch": "Incredibly sharp and fast-paced; it fuels ambition and intellectual drive.",
     "where_to_watch": ["Netflix"]
-     },
+  },
   {
     "title": "Chak De! India",
     "language": "Hindi",
     "imdb_rating": "8.1",
-     "rotten_tomatoes": "94%",
+    "rotten_tomatoes": "94%",
     "description": "A deeply patriotic, fiercely gripping, and highly inspirational story of a marginalized women's hockey team. It fills you with raw energy, pride, and an undeniable urge to succeed.",
     "primary_emotion": "Unmotivated / Lazy",
     "tone_check": "Gripping, Patriotic, Inspirational",
     "why_watch": "A masterclass in teamwork and rising above failure. Highly energizing.",
-     "where_to_watch": ["Prime Video"]
+    "where_to_watch": ["Prime Video"]
   },
   {
     "title": "12 Angry Men",
@@ -403,7 +403,7 @@
     "description": "A brilliant, tightly-scripted, and intellectually riveting courtroom drama. If you are bored, this masterclass in dialogue and tension will completely captivate your mind from start to finish.",
     "primary_emotion": "Bored / Lethargic",
     "tone_check": "Intellectual, Riveting, Tense",
-     "why_watch": "A gripping puzzle of human psychology that requires your full attention.",
+    "why_watch": "A gripping puzzle of human psychology that requires your full attention.",
     "where_to_watch": ["Prime Video"]
   },
   {
@@ -413,7 +413,7 @@
     "rotten_tomatoes": "95%",
     "description": "An epic, sweeping historical sports drama that combines patriotism with a thrilling underdog story. It is deeply emotional and will leave you feeling immensely proud and motivated to face any challenge.",
     "primary_emotion": "Unmotivated / Lazy",
-     "tone_check": "Epic, Thrilling, Patriotic",
+    "tone_check": "Epic, Thrilling, Patriotic",
     "why_watch": "A legendary cinematic triumph that inspires you to fight against all odds.",
     "where_to_watch": ["Netflix"]
   },
@@ -428,8 +428,15 @@
     "why_watch": "A powerful testament to the strength of the human mind and the power of love.",
     "where_to_watch": ["Prime Video"]
   },
-   {
+  {
     "title": "Queen",
     "language": "Hindi",
     "imdb_rating": "8.1",
     "rotten_tomatoes": "90%",
+    "description": "A joyful, liberating, and empowering coming-of-age comedy. When you feel stressed or lonely, this beautiful journey of self-discovery and independence provides immense comfort and happiness.",
+    "primary_emotion": "Nostalgic / Lonely",
+    "tone_check": "Liberating, Empowering, Joyful",
+    "why_watch": "A beautiful story of finding yourself and learning to be happy alone.",
+    "where_to_watch": ["Netflix"]
+  }
+]
