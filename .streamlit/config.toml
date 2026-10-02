@@ -1,0 +1,8 @@
+[email]
+email = ""
+
+[server]
+headless = true
+
+[browser]
+gatherUsageStats = false
